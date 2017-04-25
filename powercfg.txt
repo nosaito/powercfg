@@ -1,0 +1,15 @@
+echo off
+powercfg.exe /C 社内推奨
+powercfg.exe /X 社内推奨 /monitor-timeout-ac 10
+powercfg.exe /X 社内推奨 /monitor-timeout-dc 5
+powercfg.exe /X 社内推奨 /disk-timeout-ac 20
+powercfg.exe /X 社内推奨 /disk-timeout-dc 10
+powercfg.exe /X 社内推奨 /standby-timeout-ac 30
+powercfg.exe /X 社内推奨 /standby-timeout-dc 15
+powercfg.exe /X 社内推奨 /hibernate-timeout-ac 60
+powercfg.exe /X 社内推奨 /hibernate-timeout-dc 30
+powercfg.exe /X 社内推奨 /processor-throttle-ac adaptive
+powercfg.exe /X 社内推奨 /processor-throttle-dc adaptive
+powercfg.exe /G ON /OPTION:resumepassword
+powercfg.exe /S 社内推奨
+echo on
